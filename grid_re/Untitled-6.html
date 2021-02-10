@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer ';
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: red;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            body {
+                background-color: blue;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width:800px) {
+            body {
+                background-color: yellow;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            } 
+        }
+
+        @media (min-width: 800px) {
+            body {
+                background-color: green;
+            }
+        }
+
+        .bdr {
+            border: 2px solid black;
+            padding: 10px 23px;
+            background-color: wheat;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>Product</span>
+            <span>Contact no</span>
+            <span>About</span>
+
+        </nav>
+        <section class="bdr">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo accusantium modi molestias debitis
+            impedit fuga commodi vel iste? Velit commodi deserunt nam, fugiat tempore repellendus! Deleniti aliquid,
+            veritatis similique esse amet ea? Maiores porro temporibus ullam in asperiores sint eius, quaerat reiciendis
+            magni exercitationem nisi inventore sed cumque iusto atque error tenetur magnam aliquid deleniti blanditiis
+            commodi. Et cumque, quis earum quo quaerat officia suscipit adipisci ipsa sit alias ex, quam animi
+            recusandae, dolores numquam temporibus ea ad! Consequuntur tempora odio voluptates pariatur temporibus
+            assumenda eveniet cupiditate tenetur nihil sequi! Quos asperiores distinctio aspernatur nobis assumenda
+            soluta nisi eveniet dignissimos aperiam? Repellendus perferendis incidunt ipsam dicta blanditiis harum?
+            Perspiciatis eum modi pariatur, voluptatibus dolore nam iste nemo officiis accusantium eaque beatae neque
+            dolores blanditiis et ut possimus temporibus iure molestias magni. Rem laborum quidem eligendi repellat, eos
+            aperiam maiores pariatur voluptas amet distinctio nisi aliquid quod mollitia sint, repellendus quo similique
+            atque tempora natus libero eum. Assumenda officia mollitia ipsam, voluptas tempora minima dicta optio nam
+            quia atque debitis ipsum saepe, nobis voluptate praesentium quis suscipit. Qui inventore sunt dolore.
+            Cumque, ratione officiis ipsa odit nam dolorem necessitatibus at provident distinctio atque, fugit
+            voluptatem dicta fuga earum error itaque repellendus! Quisquam, voluptatum, animi, odio error omnis ut
+            voluptatibus sequi provident facilis nulla amet nesciunt consequatur eius nihil accusamus nobis numquam.
+        </section>
+        <aside class="bdr">
+            <h2>More About Usl Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam architecto nam saepe,
+                quis omnis, dolor perferendis enim dolore dicta obcaecati delectus minima, rerum quod a?</h2>
+        </aside>
+        <footer class="bdr">
+            Copyright CodeWithHarry 2020
+        </footer>
+    </div>
+</body>
+
+</html>

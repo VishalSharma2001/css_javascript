@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        .item{
+            background-color: #778899;
+            border:2px solid yellow;
+        }
+        #navbar{
+              grid-area: navbar;  
+        }
+        #section{
+            grid-area: section;
+            
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #footer{
+            grid-area: footer;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="item" id="navbar">
+          Home Order Buy About SignIn
+      </div>
+      <div class="item" id="section">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque illum corrupti nam, ab assumenda et recusandae tempore ex nisi sunt ullam perspiciatis dicta, dolore, sit optio. Hic iusto necessitatibus in omnis laudantium porro iure eos laborum tenetur dolores fugiat quaerat nemo temporibus saepe dolore quisquam cum dicta numquam vitae voluptatem officiis corporis facere, cumque praesentium? Totam minus velit laborum cupiditate hic aut voluptatum quos ea maiores dolor dolorum et dolores, commodi dicta fugiat odit magni. Dignissimos earum libero ipsum quaerat nemo dicta cupiditate suscipit autem obcaecati numquam ab tempore asperiores molestias, dolorum officiis a dolore. Assumenda itaque labore reiciendis? Totam iure enim aliquid, dolorum corporis ipsam nesciunt tenetur molestias ab? Vel possimus ullam in totam iure dolor maxime ut sequi nobis praesentium aspernatur harum, quod sunt laudantium labore libero vitae deserunt magnam rem dolores accusamus cum culpa enim reiciendis. Ipsa veritatis hic rerum quas expedita sapiente a, commodi aut nam ut fugit aliquid corrupti qui delectus, tempore pariatur earum quis nostrum. Sed totam esse nisi, quos doloribus beatae ab cumque deserunt tempore labore quibusdam, saepe doloremque ipsa animi? Impedit temporibus aperiam facere ratione libero sit praesentium. Excepturi, eos! Provident corrupti architecto voluptatem quisquam exercitationem facere molestias eveniet libero molestiae harum, ipsa illo eaque esse! Quibusdam quidem vitae animi ipsam dolorem, sunt perspiciatis corrupti id aperiam voluptates nesciunt aut, voluptate nihil doloribus sequi? Beatae laborum cumque obcaecati nulla at totam ducimus qui et provident optio saepe laboriosam excepturi aliquid, iure laudantium. Sequi fugit molestiae quaerat soluta, dolorum, veritatis eligendi dolorem libero nesciunt animi corporis dolor omnis quia? Dicta dolores, maiores ex eius soluta ad iure consequatur impedit dignissimos deserunt nisi labore illo, qui aspernatur officia ullam. Suscipit delectus corrupti necessitatibus corporis maxime vel commodi provident nihil laudantium quod aut at porro quos placeat, praesentium consequatur odio laboriosam laborum, maiores est recusandae.</div>
+      <div class="item" id="aside">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A ea porro veritatis nobis, nisi assumenda quisquam asperiores recusandae harum soluta delectus dignissimos accusamus autem commodi! Molestiae animi temporibus id ab! Quidem quaerat quae, tenetur repellendus inventore optio. Voluptatum, numquam eos aperiam, alias mollitia molestiae debitis eum nobis aliquam temporibus sed harum quod nulla voluptas odio doloribus facilis, natus quasi ipsa tenetur excepturi rem saepe provident. Sapiente officia odit quasi asperiores maxime maiores architecto nemo, facere blanditiis. Temporibus exercitationem inventore omnis culpa iure debitis labore nulla maxime velit ea voluptatem nisi ducimus, iusto suscipit reprehenderit voluptate. Nisi quasi, sapiente velit debitis esse porro cupiditate quo ipsam aliquam aperiam neque repellendus similique labore numquam! Voluptas et provident quis fugit. Expedita nam assumenda est mollitia dolorum deleniti, eos culpa necessitatibus quod magnam ipsam aliquid incidunt nulla voluptas aut recusandae. Impedit ducimus consequatur qui doloremque magni iure debitis nesciunt assumenda voluptatum quis est odit perferendis ratione, ab voluptate, animi tempora sunt ullam deleniti! Ad animi vero atque iste odit eum, a repellendus aperiam earum officiis quam fuga nemo praesentium eaque aliquid commodi assumenda possimus architecto temporibus dolores vitae. Atque at, sequi maiores porro ratione tempore, eveniet quo unde ex suscipit molestiae nisi earum culpa.</div>
+      <div class="item" id="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptas consectetur! Esse quis consectetur incidunt modi fugiat deleniti dignissimos quaerat!</div>
+    </div>
+</body>
+</html>

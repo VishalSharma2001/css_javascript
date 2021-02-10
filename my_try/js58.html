@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is Home</h1>
+        Time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is tutorial 58");
+
+        function greet(name,job){
+            console.log("Hey"+" "+name+" "+"You are"+job);
+        }
+        // greet()
+        // timeout=setTimeout(greet,5000,"Vishal","Engineer");
+        // console.log(timeout);
+        // clearTimeout(timeout)
+        set=setInterval(greet,1200,"vishal","Boss")
+        clearInterval(set)
+
+        function display(){
+            time=new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+            // data=data.now()
+        }
+        setInterval(display,1000);
+    </script>
+</body>
+</html>

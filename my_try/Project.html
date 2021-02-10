@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(back.jpg);
+            background-repeat: no-repeat;
+            background-size: 1550px 1000px;
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .left {
+            display: inline-block;
+           /* border: 2px solid red; */
+            position: absolute;
+            left: 34px;
+            top: 20px;
+        }
+
+        .left img {
+            display: block;
+            width: 64px;
+            border-radius: 10px;
+            filter: invert(100%);
+            cursor: pointer;
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .mid {
+            display: block;
+            width: 36%;
+           /* border: 2px solid green; */
+            margin: 12px auto;
+        }
+
+        .right {
+            position: absolute;
+            display: inline-block;
+          /*  border: 2px solid yellow; */
+            right: 34px;
+            top: 20px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: white;
+            padding: 34px 25px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: thistle;
+
+        }
+
+        .btn {
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px;
+            border: 2px solid gray;
+            border-radius: 4px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 129px 80px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 28px;
+        }
+
+        .form-group input {
+            font-family: 'Baloo Bhai', cursive;
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button{
+            display: block;
+            width: 102%;
+            margin: auto;
+            border-radius: 8px;
+            margin: 4px;
+            padding: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="index.png">
+            <div>Blog</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">github</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Our Website</h1>
+        <form>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone">
+            </div>
+            <div class="form-group">
+                <input type="password" name="" placeholder="Enter your Password">
+            </div>
+            <button class="btn">Submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>

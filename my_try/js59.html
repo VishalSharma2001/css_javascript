@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aqua;
+            padding: 34px;
+            margin: 4px;
+            text-align: center;
+            border: 2px solid grey;
+            font-size: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+       Current Time is&nbsp;: <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is JavaScript 59");
+
+        let dt = new Date();
+        console.log(dt);
+
+        let ti = new Date(0) //you can also add some milliseconds like  Date(60000)
+        console.log(ti);
+        let mytime=new Date("2019-8-30")
+        console.log(mytime);
+
+        //let newDate = new Date(year, month, date, hours, minutes, seconds, milliseconds);
+        let newDate = new Date(2001, 02, 22, 09,30, 30,1000); //month number-0-11 like march-02
+        //let dt=new Date(2001,3,22)
+        console.log(newDate);
+
+        let yr= newDate.getFullYear();
+        console.log(yr);
+        let mo= newDate.getMonth()
+        console.log(mo);
+        let da= newDate.getDate();
+        console.log(da);
+        let hours= newDate.getHours();
+        console.log(hours);
+        setInterval(update,1000);
+
+        function update(){
+            time.innerHTML=new Date();
+        }
+
+        // function update(){
+        //     time=new Date();
+        //     console.log(time);
+        //     document.getElementById('time').innerHTML=time;
+        //     // data=data.now()
+        // }
+
+    </script>
+</body>
+
+</html>

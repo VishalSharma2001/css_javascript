@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            padding: 10px 18px;
+            background-color: red;
+            color: white;
+            border-radius: 11px;
+            border: 2px solid black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is heading</h1>
+        <p id="para" class="gra">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident id aliquid suscipit! Obcaecati modi molestias animi id excepturi odio ut sint, sit quis a, minus totam! Maiores quod excepturi perspiciatis! Accusamus veniam fuga aperiam in error maiores eligendi ipsum minima, iusto saepe illo tenetur qui quas voluptates non vero minus aliquid neque recusandae. Nulla voluptatibus cum velit alias culpa! Quam quibusdam assumenda libero maiores temporibus reiciendis consectetur architecto aliquam esse, perferendis dicta ipsa asperiores error commodi nemo sit iusto earum unde illo consequatur nisi animi consequuntur tenetur mollitia. Nesciunt beatae assumenda incidunt ea perferendis molestias, unde aliquam magnam sunt necessitatibus, dolor eos delectus repudiandae explicabo temporibus magni dolore, dolorem repellat laudantium nulla corporis? Alias, numquam aliquam totam doloribus repellendus voluptate sequi nobis repellat at commodi et error, recusandae, quaerat rem consectetur amet itaque odit quibusdam asperiores inventore ullam doloremque? Illum tenetur dignissimos fuga, iste est tempora, mollitia ex quasi quis ab accusamus inventore, nulla commodi perferendis quisquam laudantium consequatur dolorem quo? Vero aspernatur quas, nostrum quisquam dolorem dolore animi et! Veniam reprehenderit laudantium iusto vero repellat necessitatibus accusamus error dolores natus corporis, quibusdam exercitationem temporibus eos sit? Aut voluptatum autem provident aliquam magnam quod, adipisci sunt vel porro, tempore assumenda.
+        </p>
+        <button id="btn" onclick="Hide()">Show/Hide</button>
+    </div>
+
+    <script>
+        let ram=document.getElementById('para');
+        // ram.addEventListener('mouseover',function run(){
+        //     // alert("This is ,mouseover")
+        //     console.log("Under box");
+        // });
+        // ram.addEventListener('mouseout',function run(){
+        //     // alert("This is ,mouseover")
+        //     console.log("out of box");
+        // });
+        // ram.addEventListener('mouseup',function run(){
+        //     alert("This is box up")
+        //     // console.log("box Up");
+        // });
+        // ram.addEventListener('mousedown',function run(){
+        //     alert("This is box down")
+        //     // console.log("box down");
+        // });
+
+        ram.addEventListener('focus',function run(){
+            // alert("This is box up")
+            // console.log("box Up");
+            para.style.
+        });
+
+        function Hide(){
+            let butt=document.getElementById('btn');
+            let ram=document.getElementById('para');
+            // // let grap=document.getElementsByClassName(;) Use Only id for this.....
+            if(ram.style.display !='none'){
+                ram.style.display='none'     
+            }
+            else{
+                ram.style.display='block'
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- 
+Onchange-  An HTML element has been changed
+Onclick- The user clicks an HTML element
+Onmouseover-   The user moves the mouse over an HTML element
+Onmouseout-The user moves the mouse away from an HTML element
+Onkeydown- The user pushes a keyboard key
+Onload- The browser has finished loading the page -->

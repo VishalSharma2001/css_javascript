@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is my Page</h1>
+    </div>
+    <script>
+        // function greet(){
+        //     console.log("This is my Function");
+        // }
+        // greet()
+
+        // let greet=() =>{
+        //     console.log("This is my Function");
+        // }
+        let greet=() => console.log("This is my Function");
+
+        // let sum = (a,b)=>{
+        //     return a+b;
+        // }
+
+        let sum=(a,b)=>a+b;
+
+        let half=(a)=>a/2;
+        sum(2,4);
+        greet();
+
+        setInterval(() => {
+            console.log("This is setinterval Function");
+        }, 3000);
+
+        let obj1={
+            greeting:"Hey",
+            names:["Vishal","Vinay","kimi","Guddu"],
+            speak(){
+                this.names.forEach((student) => {
+                   console.log(this.greeting+""+student+"Kaise hai aap ???"); 
+                });
+            }
+        }
+        obj1.speak()
+    </script>
+</body>
+</html>

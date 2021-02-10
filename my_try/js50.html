@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Functions</title>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis molestiae ipsa rem?</h1>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quas qui inventore impedit tenetur id ipsa blanditiis accusantium ea alias, ut, illum nam porro debitis at dolorum atque ex ducimus dolor pariatur consequatur facere molestias molestiae. Aut eius obcaecati, molestiae asperiores illo eaque cupiditate suscipit non nobis officiis est laudantium illum repellat? Esse suscipit libero consequuntur repudiandae ullam? Rem.
+    </div>
+    <script>
+
+        var str="My name is Vishal Sharma"
+        console.log(str)
+
+        console.log(str.indexOf("a"))
+        console.log(str.lastIndexOf("a"))
+
+        var sub=" i am a software Enginner"
+        console.log(sub.slice(1,20))
+        console.log(sub.substring(3,10))       
+        console.log(sub.substr(3,10))       
+
+        var replace=str.replace('Sharma','Bhardwaj')
+        console.log(str)
+        console.log(replace)
+
+        console.log(str.toLowerCase())
+        console.log(str.toUpperCase())
+
+        var newString=str.concat(sub)
+        console.log(newString)
+        var space="          This is JavaScript    "
+        console.log(space)
+        console.log(space.trim())
+
+        var char=str.charAt(20)
+        var char1=str.charCodeAt(20)
+        console.log(char)
+        console.log(char1)
+
+        console.log(str[3])
+
+    </script>
+</body>
+</html>
